@@ -20,20 +20,32 @@
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 10px;
       max-width: 1000px;
       margin: auto;
     }
     .gallery div {
-      background-color: #eee;
+      background-color: #fff;
+      border: 2px solid #ff4081;
       border-radius: 10px;
-      height: 250px;
+      height: 100px;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #888;
-      font-size: 1.2rem;
+      padding: 4px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .gallery div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .gallery div:hover img {
+      transform: scale(1.05);
     }
     a {
       display: inline-block;
@@ -51,10 +63,24 @@
 
   <h1>صورنا 📷</h1>
   <div class="gallery">
-    <div>📸 مكان الصورة 1</div>
-    <div>📸 مكان الصورة 2</div>
-    <div>📸 مكان الصورة 3</div>
-    <div>📸 مكان الصورة 4</div>
+    <div><img src="images/1.png" alt="صورتنا 1" /></div>
+    <div><img src="images/2.png" alt="صورتنا 2" /></div>
+    <div><img src="images/3.png" alt="صورتنا 3" /></div>
+    <div><img src="images/4.png" alt="صورتنا 4" /></div>
+    <div><img src="images/5.png" alt="صورتنا 5" /></div>
+    <div><img src="images/6.png" alt="صورتنا 6" /></div>
+    <div><img src="images/7.png" alt="صورتنا 7" /></div>
+    <div><img src="images/8.png" alt="صورتنا 8" /></div>
+    <div><img src="images/9.png" alt="صورتنا 9" /></div>
+    <div><img src="images/10.jpg" alt="صورتنا 10" /></div>
+    <div><img src="images/11.jpg" alt="صورتنا 11" /></div>
+    <div><img src="images/12.jpg" alt="صورتنا 12" /></div>
+    <div><img src="images/13.jpg" alt="صورتنا 13" /></div>
+    <div><img src="images/14.jpg" alt="صورتنا 14" /></div>
+    <div><img src="images/15.jpg" alt="صورتنا 15" /></div>
+    <div><img src="images/16.jpg" alt="صورتنا 16" /></div>
+    <div><img src="images/17.jpg" alt="صورتنا 17" /></div>
+    <div><img src="images/18.jpg" alt="صورتنا 18" /></div>
   </div>
 
   <a href="index.html">العودة للرئيسية</a>
